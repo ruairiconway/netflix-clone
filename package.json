@@ -1,6 +1,6 @@
 {
-  "homepage": "http://ruairiconway.github.io/netflix-clone",
-  "name": "netflix-clone",
+  "homepage": "http://ruairiconway.github.io/notflix",
+  "name": "notflix",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
