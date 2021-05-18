@@ -6,6 +6,7 @@ import { SelectProfileContainer } from './profiles'
 import { FooterContainer } from './footer'
 
 export function BrowseContainer() {
+    const [searchTerm, setSearchTerm] = useState('')
     const [category, setCategory] = useState('series')
     const [profile, setProfile] = useState({})
     const [loading, setLoading] = useState(true)
@@ -33,6 +34,9 @@ export function BrowseContainer() {
                             onClick={() => setCategory('films')}>
                             Films
                         </Header.Link>
+                    </Header.Group>
+                    <Header.Group>
+                        <Header.Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
                     </Header.Group>
                 </Header.Frame>
 
