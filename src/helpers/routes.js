@@ -39,7 +39,7 @@ export function ProtectedRoute({ user, children, ...restProps }) {
                     return (
                         <Redirect
                             to={{
-                                pathname: 'signin',
+                                pathname: 'notflix/signin',
                                 state: { from: location },
                             }}
                         />
